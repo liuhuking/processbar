@@ -5,19 +5,25 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 import { DailyTasks } from './daily-tasks.component';
+import { Tasksprocess } from './tasks-process';
+
+
 
 const appRoutes: Routes = [
   { path: 'daily-tasks', component: DailyTasks },
+  { path: 'tasks-process', component: Tasksprocess },
   { path: '',
     redirectTo: '/',
     pathMatch: 'full'
   }
 ];
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    DailyTasks
+    DailyTasks,
+    Tasksprocess
   ],
   imports: [
     BrowserModule,
